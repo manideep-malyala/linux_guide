@@ -1,1 +1,25 @@
+/ INSTALL /
+#dnf install tuned -y
+
+/ DIR /
+/etc/tuned
+
+/ MAIN CONFIG FILE /
+/etc/tuned/tuned-main.conf
+
+/ PROFILES DIR /
+/usr/lib/tuned/
+
+/ CHECKING THE DEF ACTIVE PROFILE / make sure tuned enable and running ...
+#tuned-adm active
+
+/ SEE ALL THE AVIALBLE PROFILES /
+#tuned-adm list
+
+/ SWITCH TO DIFFERENT PROFILE /
+#tuned-adm profile [say accelarator-performance]
+
+/ SEE THE RECOMMENDED PROFILE /
+#tuned-adm recommend
+
 
