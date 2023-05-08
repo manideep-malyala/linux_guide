@@ -1,1 +1,28 @@
+/ INSTALL /
+#dnf install cockpit -y
+
+/ START /
+#systemctl start cockpit.socket
+
+/ ENABLE /
+#systemctl enable cockpit.socket
+
+/ START AND ENABLE /
+#systemctl enable --now cockpit.socket
+
+/ STATUS CHECK /
+#systemctl status cockpit.socket
+
+/ CHECK IN FIREWALL SERVICES /
+#firewall-cmd --list-all
+
+/ IF NOT PRESENT IN THE FIREWALL SERVICES : ENABLE & RELOAD THE FIREWALL /
+#firewall-cmd --permanent --add-service=cockpit
+#firewall-cmd --reload
+
+/ ACCESS /
+by default cockpit will run on the port number 9090
+hit the browser with -->  ip_addr:port_number
+
+
 
