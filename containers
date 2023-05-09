@@ -1,1 +1,3 @@
+/ INSTALL THE REG PACKAGES /
 
+#dnf install -y vim lorax-composer cockpit-composer bash-completion composer-cli
