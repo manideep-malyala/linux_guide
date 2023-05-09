@@ -1,1 +1,4 @@
 
+/ SET HOST NAME /
+#hostnamectl set-hostname mySERVER
+
