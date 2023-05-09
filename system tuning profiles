@@ -22,4 +22,13 @@
 / SEE THE RECOMMENDED PROFILE /
 #tuned-adm recommend
 
+/ CREATE A CUSTOME TUNING PROFILE /
+
+-- create a directory with the name of custom profile inside /usr/lib/tuned/
+-- create a config file for the custom proflie with name : tuned.conf
+-- edit the conf file by adding the [main] at the start 
+-- give the summary : summary=this is the summary for the profile
+-- check the custom profile in the list by #tuned-adm list
+-- activate the custom profile : #tuned-adm profile custom_profile
+-- check the status of the profile : #tuned-adm active
 
