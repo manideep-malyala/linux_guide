@@ -13,3 +13,6 @@
 -- if not availble add inside the firewall services
 #firewall-cmd --permanent --add-service=cockpit
 
+-- reload the firewall
+#firewall-cmd --reload
+
