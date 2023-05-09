@@ -1,3 +1,15 @@
 / INSTALL THE REG PACKAGES /
 
 #dnf install -y vim os-composer cockpit-composer bash-completion composer-cli
+
+/ START OSBUILD-COMPOSER AND COCKPIT /
+
+#systemctl enable --now osbuild-composer.socket
+#systemclt enable --now cockpit.socket
+
+-- check for the cockpit inside the firewall services 
+#firewall-cmd --list-all
+
+-- if not availble add inside the firewall services
+#firewall-cmd --permanent --add-service=cockpit
+
