@@ -1,1 +1,8 @@
+/ REGISTER /
 
+#subscription-manager register
+
+-- give username and password of redhat.dev account
+
+/ ATTACH /
+#subscription-manager attach --auto
