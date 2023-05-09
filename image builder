@@ -16,3 +16,4 @@
 -- reload the firewall
 #firewall-cmd --reload
 
+[msg][nc][disrupt][intense]
