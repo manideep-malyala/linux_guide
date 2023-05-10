@@ -98,7 +98,7 @@ echo "just temp"
 
 -- when executed the file will be removed
 -- /bin/rm ./magic.sh [[internally]]
-
+-- if we use the command mode exec #bash ./magic.sh [[shabang will be ignored and the script will work fine]]
 
 
 
