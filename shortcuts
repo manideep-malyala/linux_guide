@@ -4,3 +4,6 @@ LCTRL + L --> clear the screen, just giving a new page in the terminal by keepin
 CTRL + C --> end the current command or process
 TAB --> use the auto completion for the commands or files
 TAB TAB --> view all the available targets for auto completion
+CTRL + D --> to close the terminal 
+CTRL + ALT + T --> to opena a new terminal
+
