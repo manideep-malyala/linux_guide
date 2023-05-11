@@ -110,6 +110,25 @@ for the permanent solution
 
 
 
+/ VARIABLES /
+
+everything is a string
+two typtes -- system varibles and user defined variables
+
+#set or #env --> to get all the sys vars
+
+PS1 --> sys var : responsible for terminal prompt string
+PS1=JustManny
+
+WRITE A SCRIPT SHOWING THE INFO OF THE USER USIGN THE SYS VARS
+
+
+
+User Defined Vars
+var_one=someData
+
+#readonly var_one
+can not reassign, gives error on
 
 
 
@@ -119,4 +138,4 @@ for the permanent solution
 
 
 
-[msg]:[dsr]:[bash]:[s3]
+[msg]:[dsr]:[bash]:[s4]
