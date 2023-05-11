@@ -101,6 +101,16 @@ echo "just temp"
 -- if we use the command mode exec #bash ./magic.sh [[shabang will be ignored and the script will work fine]]
 
 
+/ ADDING THE SCRIPTS DIR LOCATION TO THE PATH /
+#export PATH=$PATH:/path/to/dir
+-- now we can run the sciprt from anywhere just like a command 
+
+
+
+
+
+
+
 
 
 
