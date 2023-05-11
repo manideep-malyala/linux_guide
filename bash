@@ -154,6 +154,18 @@ export VAR=value [ inside the .bashrc ]
 -- config inside the /etc/profile to make the vars available to all users
 -- inorder to reflect the changes we have to restart the sys 
 
+/ VARIABLE SUBS /
+x=st
+echo $x --> var subs
+or ${x}
+-- if the value of the variable needs a suffix, then better to go for the second approach 
+-- #echo ${x}mas
+-- var susb within the single quotes will not works and treats as a stirng
+-- name=manny ; echo '$name' --> $name but not manny.
+
+
+/ COMMAND SUBS /
+-- 
 
 
 
