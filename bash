@@ -175,4 +175,4 @@ exec the command and subs the result
 
 
 
-[msg]:[dsr]:[bash]:[s5]
+[msg]:[dsr]:[bash]:[s6]
