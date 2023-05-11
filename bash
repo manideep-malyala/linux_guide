@@ -172,7 +172,26 @@ exec the command and subs the result
 
 
 
+/ COMMAND LINE ARGS /
+#./demo.sh arg1 agr2 arg3
+
+$# --> number of args
+$0 --> name of the script : if executed as command (path set) then absolute path will be stored else the relative path
+$1 to $n --> args from 1 to n
+$* --> all args : args as a single string, separator : the first character in IFS, by default space, set IFS='-' inside the script to confirm
+$@ --> all args : args separated with space separator
+$? --> exit code of previously executed command or script
+
+-- write a script using everything
 
 
+/ ECHO /
+-- echo will always add a backslash so that new command will interpret into a separate line
+-- to ignore the new line charater at the end use -n flag : echo -n "something; echo "something"
+-- echo -n "STRING" | wc -c  ( correct ) : ignoring the new line char and just displaying the #chars : #len=$(echo -n "MANNY" | wc -c)
+   $1 can be used for length of the first arg : #./test.sh first_arg
+   
+   
 
-[msg]:[dsr]:[bash]:[s6]
+
+[msg]:[dsr]:[bash]:[s7]
