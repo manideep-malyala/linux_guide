@@ -130,7 +130,29 @@ var_one=someData
 #readonly var_one
 can not reassign, gives error on
 
+#var=value [ correct ]
+#var = value [ comparision and invalid assignment ]
 
+
+/ VARIABLE SCOPE /
+
+sys scope > user scope > session scope
+
+1. session scope
+-- vars set inside the terminal
+-- will be gone once the terminal closed
+
+
+
+2. user scope
+-- limited to user
+-- should be declared inside the .bashrc file of the user
+export VAR=value [ inside the .bashrc ]
+
+
+3. system scope
+-- config inside the /etc/profile to make the vars available to all users
+-- inorder to reflect the changes we have to restart the sys 
 
 
 
