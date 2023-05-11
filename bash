@@ -160,4 +160,4 @@ export VAR=value [ inside the .bashrc ]
 
 
 
-[msg]:[dsr]:[bash]:[s4]
+[msg]:[dsr]:[bash]:[s5]
