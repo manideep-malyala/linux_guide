@@ -165,7 +165,10 @@ or ${x}
 
 
 / COMMAND SUBS /
--- 
+exec the command and subs the result 
+-- old style : `command`
+-- new style : $(command)
+-- ex : to print the number of files in the cwd : echo "there are $(ls | wc -l) files in the current dir"
 
 
 
