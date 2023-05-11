@@ -86,10 +86,6 @@ print("your best friend : ", random.choice(l))
 #./pyscr.py
 
 
-
-
-
-
 [script][magic.sh]
 #! /bin/rm
 echo "just temp"
@@ -104,6 +100,15 @@ echo "just temp"
 / ADDING THE SCRIPTS DIR LOCATION TO THE PATH /
 #export PATH=$PATH:/path/to/dir
 -- now we can run the sciprt from anywhere just like a command 
+-- temp to session level
+
+for the permanent solution
+-- we need to add the info inside the .bashrc file, located inside the user home dir
+-- whenever a user trigger a terminal, automatically this file will be executed first
+-- check the flow by adding a simple echo at the end of the file
+-- add the export info into the .bashrc file
+
+
 
 
 
