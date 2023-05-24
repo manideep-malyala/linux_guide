@@ -191,7 +191,11 @@ $? --> exit code of previously executed command or script
 -- echo -n "STRING" | wc -c  ( correct ) : ignoring the new line char and just displaying the #chars : #len=$(echo -n "MANNY" | wc -c)
    $1 can be used for length of the first arg : #./test.sh first_arg
    
-   
+  
 
+----------------------
+/ TimeStamping for Logs /
+timestamp=$(date +%d_%m_%Y_%H_%M_%S)
+echo "data to log" >> $(timestamp).log
 
 [msg]:[dsr]:[bash]:[s7]
