@@ -192,10 +192,28 @@ $? --> exit code of previously executed command or script
    $1 can be used for length of the first arg : #./test.sh first_arg
    
   
+/ READ /
+two approaches to read the dynamic data from the user 
+with prompt : read a b -->  10 20
+with prompt : echo "enter value for A "; read A; echo "enter value for B "; read B; echo "A : $A"; echo "B :$B";
+to solve the new line problem use the -n with the echo 
+but this is not much recommended approach 
+combine both into a single line 
+#read -p "enter value for a : " A
+hide the input on the screen wiht the -s flag with the read / for the password like usecases 
+
+script : user data to file : echo "$var:$var" >> data.txt
+script : display the content of the file provided by user 
+script : remove the blank lines in file : hint : grep "^S" for all empty lines, -v flag : all lines except the matched, > temp.txt ; mv temp.txt $fname 
+script : remove the dup lines from the file : hint : sort -u abc.txt
+
+
 
 ----------------------
 / TimeStamping for Logs /
 timestamp=$(date +%d_%m_%Y_%H_%M_%S)
 echo "data to log" >> $(timestamp).log
 
-[msg]:[dsr]:[bash]:[s7]
+
+
+[msg]:[dsr]:[bash]:[s8]
